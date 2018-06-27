@@ -1,0 +1,123 @@
+* { box-sizing: border-box; }
+
+/*-- body styling  --*/
+body {	
+    width: 100vw; 
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 2vw;
+    background-color: white;
+    font-family:'Work Sans', sans-serif;
+}
+
+.app{
+    width: 80vw; 
+    min-height: 60vh;
+    border: 0.2vw  solid #fa565a;
+    background-color: #70bbd9;
+    margin: 0 auto;
+  
+}
+
+h1{
+  text-align: center;
+  color: #124357;
+  font-size: 4vw;
+  text-transform: uppercase;
+  text-shadow: 3px 2px #1f6f8f;
+}
+
+h2{
+    text-align: center;
+    color: #124357;
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  h4{
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-left:5px;
+  }
+p, .total-2{
+    text-align: center;
+    color: #9e1517;
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+.form-div{
+  width: 70vw; 
+  height: 10vh;
+  margin: 0 auto;
+  background-color: #fa565a;
+}
+.form-div > *{
+    width:22%;
+    height:8vh;
+    background-color: #fa565a;
+    outline:0;
+    border: 0;
+    font-size: 2vw;
+    margin:auto;
+    padding-left: 2px;
+    color:white;
+}
+.form-div > button{
+    text-align: right;
+}
+.income-div  { grid-area: income-div;   border-right: 1px solid white;}
+.expense-div { grid-area: expense-div;  border-left: 1px solid white;}
+.separator-div { grid-area: separator-div;}
+.balance-div { grid-area: balance-div;  border-top: 2px solid white;}
+.income-total-div {grid-area: income-total-div; border-right: 1px solid white;}
+.expense-total-div {grid-area:expense-total-div;border-left: 1px solid white;}
+.account-grid-container {
+  display: grid;
+  grid-template-columns: 50% 50% 100% 50% 50% 100%;
+  grid-template-areas:
+    'income-div expense-div'
+    'separator-div separator-div'
+    'income-total-div expense-total-div'
+    'balance-div balance-div';
+  margin: 10px;
+  width:70vw;
+  margin: 10px auto;
+}
+ul{
+    padding:0;
+}
+li{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin:0 5px;
+    border-bottom: 1px solid #124357;
+}
+li> span{
+    color:white;
+    margin:10px;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+
+}
+.total-1{
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    text-transform: capitalize;
+}
+.invalid{
+	border: 0;
+	border: 3px solid red;
+} 
+.error-msg-div{
+    width:70vw;
+    color:red;
+    font-size: 1.5vw;
+    text-align: center;
+    margin:10px auto;
+}
